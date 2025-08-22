@@ -1,0 +1,6 @@
+local TweenService = game:GetService("TweenService")
+local part = workspace:WaitForChild("MovingPart")
+local goal = {Position = Vector3.new(0, 10, 0)}
+local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+local tween = TweenService:Create(part, tweenInfo, goal)
+tween:Play()
